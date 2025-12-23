@@ -1,0 +1,53 @@
+{
+  "name": "@edpear/sdk",
+  "version": "1.1.7",
+  "description": "EdPear SDK - AI-powered educational components for JavaScript/TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "edpear",
+    "ai",
+    "education",
+    "vision",
+    "sdk"
+  ],
+  "author": "EdPear",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edpear/edpearofficial.git",
+    "directory": "edpear-sdk"
+  },
+  "homepage": "https://edpear.com",
+  "bugs": {
+    "url": "https://github.com/edpear/edpearofficial/issues"
+  },
+  "dependencies": {
+    "@edpear/sdk": "^1.1.6",
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^16.6.1",
+    "fs-extra": "^11.3.3",
+    "inquirer": "^9.3.8",
+    "open": "^8.4.2",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "edpear": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ]
+}
